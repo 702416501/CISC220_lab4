@@ -20,8 +20,8 @@ class Book {
 
 public:
 	//constructors
-	Book(string nFirst, string nLast, string nBook);
-	Book(string nFirst, string nLast, string nBook, int yrPub, int ratings);
+	Book(string firstn, string lastn, string bookn);
+	Book(string firstn, string lastn, string bookn, int pubyr, int ratings);
 
 	~Book();//destructor
 
