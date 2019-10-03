@@ -14,14 +14,14 @@ using namespace std;
 class Book {
 	string nFirst;
 	string nLast;
-	int ratings[10];
+	int *ratings = NULL;
 	string nBook;
 	int yrPub;
 
 public:
 	//constructors
 	Book(string firstn, string lastn, string bookn);
-	Book(string firstn, string lastn, string bookn, int pubyr, int ratings);
+	Book(string firstn, string lastn, string bookn, int pubyr, int *rts);
 
 	~Book();//destructor
 
@@ -32,9 +32,5 @@ public:
 	//need the operator overload
 
 };
-
-
-
-
 
 #endif /* BOOK_HPP_ */
