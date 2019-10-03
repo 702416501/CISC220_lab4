@@ -48,7 +48,7 @@ double Book::avgRating(int *rts){
 	double tot = 0;
 	double avg;
 	for (int i = 0; i< 10; i++){
-		sum += ratings[i];
+		sum += *rts[i];
 		tot++;
 	}
 
