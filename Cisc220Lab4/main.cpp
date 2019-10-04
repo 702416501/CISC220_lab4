@@ -9,7 +9,7 @@
 #include "SLL.hpp"
 using namespace std;
 
-int main() {
+/*int main() {
 	int r[10] = { 9, 8, 4, 5, 11, 10, 3, 6, 8, 2 };
 	string s[10] = { "really good!", "loved it", "mediocre", "okay, not great",
 			"best book ever!", "awesome!", "boring", "not bad",
@@ -28,3 +28,4 @@ int main() {
 
 	return 0;
 }
+*/

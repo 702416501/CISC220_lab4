@@ -11,6 +11,12 @@
 #include <array>
 using namespace std;
 
+Book::Book(){
+	nFirst;
+	nLast;
+	nBook;
+	yrPub;
+}
 
 Book::Book(string firstn, string lastn, string bookn) {
 	nFirst = firstn;
@@ -43,12 +49,12 @@ Book::~Book(){//destructor
 
 
 
-double Book::avgRating(int *rts){
+double Book::avgRating(){
 	int sum = 0;
 	double tot = 0;
 	double avg;
 	for (int i = 0; i< 10; i++){
-		sum += *rts[i];
+		sum += ratings[i];
 		tot++;
 	}
 
@@ -69,6 +75,14 @@ void Book::printBkInfo() {
 
 }
 void Book::printRating(){
-	cout<<"Average rating of this book: "<<avgRating(ratings)<<endl;
+	cout<<"Average rating of this book: "<<this->avgRating()<<endl;
 
+}
+
+bool Book::operator>(Book b) {
+	Book book;
+	if (this->avgRating() > b.avgRating()) {
+			return true;
+	}
+	return false;
 }

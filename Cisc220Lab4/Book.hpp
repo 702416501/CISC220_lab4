@@ -20,16 +20,17 @@ class Book {
 
 public:
 	//constructors
+	Book();
 	Book(string firstn, string lastn, string bookn);
 	Book(string firstn, string lastn, string bookn, int pubyr, int *rts);
 
 	~Book();//destructor
 
 	//other methods
-	double avgRating(int ratings[]);//calculates average by traversing through the array
+	double avgRating();//calculates average by traversing through the array
 	void printRating();//prints rating; if rating is zero, prints "(no ratings yet)"
 	void printBkInfo();//prints author info, year of publication, and avg rating
-	//need the operator overload
+	bool operator>(Book b);//operator overload
 
 };
 
