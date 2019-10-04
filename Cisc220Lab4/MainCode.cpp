@@ -34,6 +34,7 @@ int main(){
 
 	findbestbook(&bks[0], 5);
 
+	cout<<"\n"<<"\n"<<endl;
 
 
 	//part 2
