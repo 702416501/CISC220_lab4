@@ -51,7 +51,7 @@ int main(){
 
 	heapbookarray[0] = new Book("Allie", "DeAbreu",
 			"Memior: I'm Exahusted", 2019, b4ratings);
-	heapbookarray[1] = new Book("Me", "Myself",
+	heapbookarray[1] = new Book("Allie", "DeAbreu",
 			"The Sequil: What Even is Sleep", 2019, b3ratings);
 
 	for(int i = 0; i < 2; i++) {
