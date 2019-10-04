@@ -25,11 +25,11 @@ int main(){
 
 
 	Book bks[5] =  {
-		Book("Harper","Lee", "To Kill a Mockingbird", 1960, b1ratings),
-		Book("Josh", "Steinbeck", "Of Mice and Men", 1937, b2ratings),
-		Book("Sara", "Gruen", "Water for Elephants", 2011, b3ratings),
-		Book("Harper", "Collins", "Wicked", 1996, b4ratings),
-		Book("Julie", "Powell", "Julie and Julia", 2002, b5ratings)
+		Book b1("Harper","Lee", "To Kill a Mockingbird", 1960, b1ratings),
+		Book b2("Josh", "Steinbeck", "Of Mice and Men", 1937, b2ratings),
+		Book b3("Sara", "Gruen", "Water for Elephants", 2011, b3ratings),
+		Book b4("Harper", "Collins", "Wicked", 1996, b4ratings),
+		Book b5("Julie", "Powell", "Julie and Julia", 2002, b5ratings)
 	};
 
 	findbestbook(&bks[0], 5);
